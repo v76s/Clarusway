@@ -3,12 +3,15 @@
 <head> 
   <title>Clarusway- Style definiton in HTML</title>
     <style>
-        body {background-color: white;}
+        body {background-color: rgb(177, 211, 244);}
         
         h1 {
             color: yellow;
             font-family: verdana;
-            font-size: 50%;
+            font-size: 200%;
+            text-shadow: 2px 5px #FF0000;
+            /*text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;*/
+            text-align: center;
         }
         
         p {
@@ -28,14 +31,41 @@
   
         table, th, td  
         {
+          /*  This is how comments in CSS is made.
+          dotted - Defines a dotted border
+          dashed - Defines a dashed border
+          solid - Defines a solid border
+          double - Defines a double border
+          groove - Defines a 3D grooved border. The effect depends on the border-color value
+          ridge - Defines a 3D ridged border. The effect depends on the border-color value
+          inset - Defines a 3D inset border. The effect depends on the border-color value
+          outset - Defines a 3D outset border. The effect depends on the border-color value
+          none - Defines no border
+          hidden - Defines a hidden border
+          */
+
+          /* Demonstrate the border-collapse attribute.
+          border-collapse: separate; 
+          border-collapse: collapse;
+          */
+
           font-size: 100%;  				
-          border:1px solid rgb(241, 85, 85);
+          border:3px solid #f2d846;
           text-align: center;
-          white-space: nowrap;
+          white-space: break-word;
+          border-collapse: collapse;
+
           }
   
         tr {
           height:50px;
+          background-color: darkgray;
+          font-weight:bold;
+        }
+
+        th {
+          height:50px;
+          background-color: rgb(102, 172, 233);
         }
   
     </style>
@@ -44,28 +74,32 @@
   
     <p style="color:#dd4108;font-size:200%;text-align:center">
       <b>HTML TABLE<br>
-    </p>  
+    </p> 
     
-    <table style="width:100%">
-      <tr>
+    <h1>HTML TABLE</h1>
+    
+    <table style="width:100%">      
+       <tr>
         <th width="10%">Person 1</th>        
         <th width="20%">Person 2</th>
         <th width="30%">Person 3</th>
         <th width="25%">Person 4</th>
         <th width="25%">Person 5</th>
-      </tr>
+      </tr> 
       <tr>
         <td>Daniel</td>
         <td rowspan="2">Federico</td>  
         <td>Torrey</td>
         <td>Laura</td>
-        <td>Henry</td>	  		  
+        <td>Henry - Long text to demonstrate the text wrapping</td>	  		  
       </tr>
       <tr>
         <td>1786</td>       
         <td>1450</td>
         <td colspan="2">2310</td>        
       </tr>
-      </table>
+    </table>
   </body>
   </html> 
+
+  <!-- Lets make a demonstration of a table from scratch.  -->
