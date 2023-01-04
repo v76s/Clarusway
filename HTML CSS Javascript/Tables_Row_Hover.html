@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> 
+  <title>Clarusway- Tables Vertical Alignment</title>
+    <style> 
+        
+        body {
+            background-color:aliceblue
+        }
+        table,tr,td
+        {               			
+          border:1px solid black;
+          text-align: center;          
+          border-collapse: seperate; /* Seperate vs Collapse */
+          height:50px;
+          }
+  
+        table{
+            margin-left: auto; /*Setting the margins 
+                                helps us to center table
+                                */
+            margin-right:auto;
+            width:50%;  /* Change and display */
+            height: 250%;/* No changes expected, why? */
+        }
+        tr {         
+          background-color: rgb(101, 220, 236);
+          font-weight:bold;          
+        }
+
+        /* Demonstration of the table hover handler. */
+        tr:hover {
+                background-color:yellow; 
+        }
+
+        th {          
+          background-color: rgb(102, 172, 233);    
+          height: 100px;          
+        }       
+  
+    </style>
+  </head>  
+  <body>
+  
+    <p style="color:#08dd5a;font-size:200%;text-align:center">
+      <b>HTML TABLE<br>
+    </p>    
+    
+    <table>      
+       <tr>
+        <th width="10%">ID 1</th>        
+        <th width="20%">Country</th>
+        <th width="30%">Firstname</th>
+        <th width="25%">LastName</th>
+        <th width="25%">Customer Info</th>
+      </tr> 
+      <tr>
+        <td>1</td>
+        <td rowspan="2">USA</td>  
+        <td>Torrey</td>
+        <td style="text-align:center;">Halverson</td>
+        <td>This is the additional information about customer</td>	  		  
+      </tr>
+      <tr>
+        <td>2</td>       
+        <td>Laura</td>
+        <td colspan="2">Kennings</td>        
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">USA</td>  
+        <td>Jack</td>
+        <td style="text-align:center;">Thompson</td>
+        <td>Customer Info</td>	  		  
+      </tr>
+    </table>
+
+  </body>
+  </html> 
