@@ -11,10 +11,18 @@
         {               			
           border:1px solid black;
           text-align: center;          
-          border-collapse: collapse; /* Seperate vs Collapse */
+          border-collapse: seperate; /* Seperate vs Collapse */
           height:50px;
           }
   
+        table{
+            margin-left: auto; /*Setting the margins 
+                                helps us to center table
+                                */
+            margin-right:auto;
+            width:50%;  /* Change and display */
+            height: 250%;/* No changes expected, why? */
+        }
         tr {         
           background-color: rgb(101, 220, 236);
           font-weight:bold;
@@ -32,7 +40,7 @@
       <b>HTML TABLE<br>
     </p>    
     
-    <table style="width:100%">      
+    <table>      
        <tr>
         <th width="10%">ID 1</th>        
         <th width="20%">Country</th>
@@ -56,5 +64,3 @@
 
   </body>
   </html> 
-
-  <!-- Lets make a demonstration of a table from scratch.  -->
