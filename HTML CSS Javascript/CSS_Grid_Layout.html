@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clarusway Float Layout</title>
+    <style>
+      .item1 {
+        grid-area: header;
+      }
+      .item2 {
+        grid-area: menu;
+      }
+      .item3 {
+        grid-area: main;
+      }
+      .item4 {
+        grid-area: right;
+      }
+      .item5 {
+        grid-area: footer;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "menu main main main right right"
+          "menu footer footer footer footer footer";
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Clarusway - CSS Grid Float</h2>
+    <p>Grid layout contains six columns and three rows</p>
+    <div class="grid-container">
+      <div class="item1">Customer Detail View</div>     
+      <div class="item2">
+        <nav>
+            <ul>
+              <li><a href="#">Henry</a></li>
+              <li><a href="#">Torrey</a></li>
+              <li><a href="#">Robert</a></li>
+              <li><a href="#">Jack</a></li>
+              <li><a href="#">John</a></li>
+              <li><a href="#">Allison</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="item3">
+        <article>
+            <h1>Henry</h1>
+            <pre>
+              Henry Harrison 
+              Address : London 3242 st 66 avenue.
+              Phone   : +45 454543466
+              Country : UK
+              Total Bill : 45.55$
+            </pre>
+            <p>
+              Some more additional detail about the customer registered.
+            </p>
+          </article>
+      </div>
+      <div class="item4">Right cell for additional info if needed.</div>
+      <div style="background-color: rgb(73, 153, 239);" class="item5">   
+        <p>Datetime or Copyright related information displayed here  ...</p>
+      </div>
+    </div>
+  </body>
+</html>
