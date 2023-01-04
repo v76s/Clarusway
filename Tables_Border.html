@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> 
+  <title>Clarusway- Style definiton in HTML</title>
+    <style> 
+        
+        body {
+            background-color:aliceblue
+        }
+        table,tr,td
+        {               			
+          border:1px solid #f8f8fa;
+          text-align: center;          
+          border-collapse: collapse;
+          height:50px;
+          }
+  
+        tr {         
+          background-color: rgb(101, 220, 236);
+          font-weight:bold;
+        }
+
+        th {          
+          background-color: rgb(102, 172, 233);          
+        }
+  
+    </style>
+  </head>  
+  <body>
+  
+    <p style="color:#08dd5a;font-size:200%;text-align:center">
+      <b>HTML TABLE<br>
+    </p>    
+    
+    <table style="width:100%">      
+       <tr>
+        <th width="10%">ID 1</th>        
+        <th width="20%">Country</th>
+        <th width="30%">Firstname</th>
+        <th width="25%">LastName</th>
+        <th width="25%">Customer Info</th>
+      </tr> 
+      <tr>
+        <td>1</td>
+        <td rowspan="2">USA</td>  
+        <td>Torrey</td>
+        <td style="text-align:center;">Halverson</td>
+        <td>This is the additional information about customer</td>	  		  
+      </tr>
+      <tr>
+        <td>2</td>       
+        <td>Laura</td>
+        <td colspan="2">Kennings</td>        
+      </tr>
+    </table>
+
+  </body>
+  </html> 
+
+  <!-- Lets make a demonstration of a table from scratch.  -->
