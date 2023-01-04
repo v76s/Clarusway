@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarusway</title>   
-</head>
-      <body onload="myFunction()">     
-            <h2>What Can JavaScript Do?</h2>
-            <p id="output">The result modified by Javascript will be displayed here ...</p>
-            <button type="button" onclick='document.getElementById("output").innerHTML = "Now the content changed by Javascript"'>OK</button>
-            <button type="button" onclick='alert("Title of the Alert","User pressed the OK button")'>Alert</button>
-            <script>      
-                  var age = prompt("Please enter your age ...", "15");     
-                  document.getElementById("output").innerHTML = "You have entered " + age + " for the age prompt";
-            </script> 
-      </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarusway</title>
+  </head>
+  <body onload="myFunction()">
+    <h2>What Can JavaScript Do?</h2>
+    <p id="output">
+      The result modified by Javascript will be displayed here ...
+    </p>
+    <button
+      type="button"
+      onclick='document.getElementById("output").innerHTML = "Now the content changed by Javascript"'
+    >
+      OK
+    </button>
+    <button
+      type="button"
+      onclick='alert("Title of the Alert","User pressed the OK button")'
+    >
+      Alert
+    </button>
+    <script>
+      var age = prompt("Please enter your age ...", "15");
+      document.getElementById("output").innerHTML =
+        "You have entered " + age + " for the age prompt";
+      console.log(age); /* Display to the console */
+      alert(age);
+      window.alert(age);
+      document.write(age);
+    </script>
+    <button onclick="window.print()">Print this page</button>
+    <!-- Demonstrate the debug ability ... -->
+    <!--
+      Javascript keywords : 
+      var		Declares a variable
+      let		Declares a block variable
+      const	Declares a block constant
+      if		Marks a block of statements to be executed on a condition
+      switch	Marks a block of statements to be executed in different cases
+      for		Marks a block of statements to be executed in a loop
+      function	Declares a function
+      return	Exits a function
+      try		Implements error handling to a block of statements
+
+            -->
+  </body>
 </html>
