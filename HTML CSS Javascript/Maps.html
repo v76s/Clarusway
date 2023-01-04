@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="docs/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <style>
+      .leaflet-container {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .map {
+        position: absolute;
+        top: 0px;
+        bottom: 10px;
+        height: 100%;
+        width: 80%;
+      }
+      .custom-popup .leaflet-popup-content-wrapper {
+        background: #2c3e50;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .custom-popup .leaflet-popup-content-wrapper a {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .custom-popup .leaflet-popup-tip-container {
+        width: 30px;
+        height: 15px;
+      }
+      .custom-popup .leaflet-popup-tip {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #2c3e50;
+      }
+
+      .miniImg {
+        border-radius: 8px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="custom-popup" style="width: 100vw; height: 70vh"></div>
+    <script>
+      var map = L.map("map").setView(
+        [38.465174654448134, 27.112543689903056],
+        13
+      );
+      var tiles = L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+        {
+          maxZoom: 18,
+          attribution:
+            'www.clarusway.com; <a href="https://www.google.com">Clarusway IOT page</a> corporation, ' +
+            'Clarusway Software © <a href="https://www.google.com/">Clarusway IOT</a>',
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1,
+        }
+      ).addTo(map);
+
+      var circle = L.circle([38.44175896771613, 27.203812060882854], {
+        color: "red",
+        fillColor: "#f03",
+        fillOpacity: 0.5,
+        radius: 500,
+      })
+        .addTo(map)
+        .bindPopup(
+          "This is Clarusway IOT project upcoming implementation region!!"
+        );
+
+      const Device1 =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h3 id="firstHeading" class="firstHeading">LoRaWan1301</h3>' +
+        '<div id="bodyContent">' +
+        '<img class="miniImg" src="https://site-file.fomillesite.com/1260815565112336386/1483324555364814849.jpg!4"></img>' +
+        "<br/>" +
+        '<p>LoRaWan1301 Device Library, <a href="https://www.nicerf.com/products/detail/lorawan-gateway-module-lorawan1301.html">' +
+        "https://www.nicerf.com/products/detail/lorawan-gateway-module-lorawan1301.html</a> " +
+        "(last visited April 12, 2022).</p>" +
+        "</div>" +
+        "</div>";
+
+      const Device2 =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h3 id="firstHeading" class="firstHeading">868/915MHz 500mW</h3>' +
+        '<div id="bodyContent">' +
+        '<img class="miniImg" src="https://site-file.fomillesite.com/1260815565112336386/1481548514396884993.jpg!4"></img>' +
+        "<br/>" +
+        '<p>868/915MHz 500mW, <a href="https://www.nicerf.com/products/detail/high-power-lora-module-lora1276f30.html">' +
+        "https://www.nicerf.com/products/detail/high-power-lora-module-lora1276f30.html</a> " +
+        "(last visited March 22, 2022).</p>" +
+        "</div>" +
+        "</div>";
+
+      const Device3 =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h3 id="firstHeading" class="firstHeading">LLCC68 Based LoRa</h3>' +
+        '<div id="bodyContent">' +
+        '<img class="miniImg" src="https://site-file.fomillesite.com/1260815565112336386/1482228232767033345.jpg!4"></img>' +
+        "<br/>" +
+        '<p>LLCC68 Based LoRa, <a href="https://www.nicerf.com/products/detail/lora-module-lora-cc68.html">' +
+        "https://www.nicerf.com/products/detail/lora-module-lora-cc68.html</a> " +
+        "(last visited March 6, 2022).</p>" +
+        "</div>" +
+        "</div>";
+
+      var marker1 = L.marker([38.46897621493715, 27.22278280001465])
+        .addTo(map)
+        .bindPopup(Device1)
+        .openPopup();
+
+      marker = L.marker([38.46497880545019, 27.21527944797012])
+        .addTo(map)
+        .bindPopup(Device2)
+        .openPopup();
+
+      marker = L.marker([38.46188880157615, 27.21216484900818])
+        .addTo(map)
+        .bindPopup(Device3)
+        .openPopup();
+
+      marker = L.marker([38.457024895025604, 27.22518953557597])
+        .addTo(map)
+        .bindPopup(Device1)
+        .openPopup();
+
+      var marker1 = L.marker([38.46745902668105, 27.231701878])
+        .addTo(map)
+        .bindPopup(Device2)
+        .openPopup();
+
+      var polygon = L.polygon([
+        [38.472488487177685, 27.209616540766753],
+        [38.4687268163202, 27.240337812345373],
+        [38.452548702660565, 27.2390636582246],
+        [38.45410777950742, 27.21032440416713],
+      ])
+        .addTo(map)
+        .bindPopup("Clarusway IOT First zone to be implemented");
+
+      var popup = L.popup()
+        .setLatLng([38.465174654448134, 27.112543689903056])
+        .setContent(
+          "This is what will be displayed when a standalone popup is requested."
+        )
+        .openOn(map);
+
+      function onMapClick(e) {
+        popup
+          .setLatLng(e.latlng)
+          .setContent("Selected Coordinates " + e.latlng.toString())
+          .openOn(map);
+      }
+      map.on("click", onMapClick);
+    </script>
+  </body>
+</html>
