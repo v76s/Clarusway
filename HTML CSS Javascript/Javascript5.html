@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clarusway- JavaScript program to find number existing in given array or not</title>
+    </head>
+    <body>
+
+        <table>
+        <tr>
+            
+        <td> <input type="text" name="a" id="first" placeholder="Enter number"/> </td>
+        </tr>
+        <tr>
+        <td> <button onclick="search()">Submit</button> </td>
+        </tr>
+        </table>
+        <div id="num"></div>
+        <div id="num1"></div>
+    </body>
+
+        <script type="text/javascript">
+            function search()
+            {
+            var array = [5, 9, 64, 95, 4];
+            var s = parseInt(document.getElementById ('first').value);
+            document.getElementById('num').innerHTML=("Given numbers : "+ array);
+            if(array.includes(s))
+            {
+            document.getElementById('num1').innerHTML=("Number exists in the given list");
+            }
+            else
+            {
+            document.getElementById('num1').innerHTML=("Number does not exist in the given list");
+            }
+            }
+        </script>
+</html>

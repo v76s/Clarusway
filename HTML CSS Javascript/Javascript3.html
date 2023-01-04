@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarusway</title>   
+</head>
+    <body>
+        <h4 align="center">Calculate the area and perimeter when side length given ...</h4>
+        <table>
+        <tr>
+            <td><input type="text" name="a" id="first" placeholder="Enter a number"/> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="CalculateSquare()">Submit</button> </td>
+        </tr>
+        </table>
+
+        <div id="Result1">Area will be : </div>
+        <div id="Result2">Perimeter will be : </div>
+    </body>
+
+    <script type="text/javascript">
+                    function CalculateSquare( )
+                    {
+                    var a,area,perimeter;
+                    a = parseInt(document.getElementById("first").value);
+                    area = a*a; //Equation for Area of a square
+                    perimeter = 4*a; //Equation for Perimeter of a square
+                    document.getElementById("Result1").innerHTML="Area of square is : "+area;
+                    document.getElementById("Result2").innerHTML="Perimeter of square is : "+perimeter;
+                    }
+    </script>
+
+</html>

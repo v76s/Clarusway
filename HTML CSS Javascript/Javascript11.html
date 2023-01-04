@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Clarusway - Draw a rectangular shape</title>
+
+<script type="text/javascript">
+      function draw() {
+          const canvas = document.getElementById("canvas");
+          const ctx = canvas.getContext("2d");
+
+          const color = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+          const drawRec = (x, y, xLength, yLength) => {
+              ctx.lineWidth = 10;
+              ctx.strokeStyle = `rgba(${color(0, 255)}, ${color(0, 255)}, ${color(0, 255)})`;
+              ctx.strokeRect(x, y, xLength, yLength);
+          };
+
+          drawRec(45, 45, 190, 190);
+          drawRec(60, 60, 160, 160);
+          drawRec(80, 80, 120, 120);
+          drawRec(100, 100, 80, 80);
+          drawRec(120, 120, 40, 40);
+          drawRec(140, 140, 1, 1);
+        }
+</script>
+</head>
+<body onload="draw();">
+    <canvas id="canvas" width="550" height="550"></canvas>  <!-- Try 150 as well -->
+</body>
+</html>

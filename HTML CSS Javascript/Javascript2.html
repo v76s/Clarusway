@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarusway</title>   
+</head>
+        <body>
+                <script type="text/javascript">
+                        function CalculateInterest()
+                        {
+                                var p,t,r; 
+                                var si,ci;
+                                p = document.getElementById ("txCapital").value;
+                                t = document.getElementById ("txPeriod").value;
+                                r = document.getElementById ("txRate").value;
+
+                                si = parseInt((p*t*r)/100 );
+                                amount = p*Math.pow((1 +r/100),t );
+
+                                ci = (amount-p).toFixed(2);
+
+                                document.getElementById ('Result1').innerHTML ="Simple interest : "+si + "$";
+                                document.getElementById ('Result2').innerHTML ="Compound interest : "+ci + "$";
+                        }
+                </script>
+
+        <table style="border-style: none">
+                <tr>
+                        <td> <input type="text" name="a" id="txCapital" placeholder="Enter capital investment ..."/> </td>
+                </tr>
+                <tr>
+                        <td> <input type="text" name="b" id="txPeriod" placeholder="Enter time period ..."/> </td>
+                </tr>
+                <tr>
+                        <td> <input type="text" name="c" id="txRate" placeholder="Enter rate of interest(%) ..."/> </td>
+                </tr>
+                <tr>
+                        <td> <button onclick = "CalculateInterest()" >Submit</button> </td>
+                </tr>
+        </table>
+        <div id="Result1">Calculated Simple Interest : </div>
+        <div id="Result2">Calculated Compound Interest : </div>
+        </body>
+</html>
