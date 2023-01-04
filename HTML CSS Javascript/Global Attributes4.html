@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showDetails(animal) {
+        var animalType = animal.getAttribute("data-animal");
+        alert("The " + animal.innerHTML + " is a " + animalType + ".");
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      Global Attribute "data" is used to store custom data private to the page
+      or application
+    </h1>
+    <p>Click on a species to see what type it is:</p>
+
+    <ul>
+      <li onclick="showDetails(this)" id="owl" data-animal="bird">Owl</li>
+      <li onclick="showDetails(this)" id="salmon" data-animal="fish">Salmon</li>
+      <li onclick="showDetails(this)" id="tarantula" data-animal="spider">
+        Tarantula
+      </li>
+    </ul>
+  </body>
+</html>

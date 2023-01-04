@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 350px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid dodgerblue;
+      }
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+      }
+
+      function drop(ev) {
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+        ev.preventDefault();
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>
+      Global Attribute draggable Specifies whether an element is draggable or
+      not
+    </h2>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <p id="drag1" draggable="true" ondragstart="drag(event)">
+      Clarusway drag and drop demonstration.
+    </p>
+  </body>
+</html>
