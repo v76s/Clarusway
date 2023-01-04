@@ -22,14 +22,8 @@
   
         h1   {color: blue;}
         p    {color: red;}
-  
-        a {
-            color: rgb(83, 89, 182);
-            font-family: verdana;
-            font-size: 200%;
-        }
-  
-        table, th, td  
+    
+        table, td  
         {
           /*  This is how comments in CSS is made.
           dotted - Defines a dotted border
@@ -48,31 +42,34 @@
           border-collapse: separate; 
           border-collapse: collapse;
           */
-
+         
           font-size: 100%;  				
-          border:3px solid #f2d846;
-          text-align: center;
+          border:1px solid #f2d846;
+          text-align: left;
           white-space: break-word;
           border-collapse: collapse;
-
+          height:50px;
           }
   
-        tr {
-          height:50px;
+        tr {         
           background-color: darkgray;
           font-weight:bold;
         }
 
-        th {
-          height:50px;
+        th {          
           background-color: rgb(102, 172, 233);
+          font-size: 200%;  				
+          border:1px solid #154edf;
+          text-align: center;          
+          border-collapse: collapse;
+          height:50px;
         }
   
     </style>
   </head>  
   <body>
   
-    <p style="color:#dd4108;font-size:200%;text-align:center">
+    <p style="color:#08dd5a;font-size:200%;text-align:center">
       <b>HTML TABLE<br>
     </p> 
     
@@ -90,7 +87,7 @@
         <td>Daniel</td>
         <td rowspan="2">Federico</td>  
         <td>Torrey</td>
-        <td>Laura</td>
+        <td style="text-align:center;">Laura</td>
         <td>Henry - Long text to demonstrate the text wrapping</td>	  		  
       </tr>
       <tr>
@@ -99,6 +96,7 @@
         <td colspan="2">2310</td>        
       </tr>
     </table>
+
   </body>
   </html> 
 
