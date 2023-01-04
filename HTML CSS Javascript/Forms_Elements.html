@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Clarusway - Form Elements in HTML</title>
+	<style>  		
+			h1 {
+				  color: yellow;
+				  font-family: verdana;
+				  font-size: 50%;
+			}
+			
+			p {
+				  color: green;
+				  font-family: courier;
+				  font-size: 160%;
+			}
+
+			h1   {color: blue;}
+			p    {color: red;}
+
+			a {
+				  color: rgb(83, 89, 182);
+				  font-family: verdana;
+				  font-size: 200%;
+			}
+
+			table, th, td 
+			{
+				font-size: 150%;  				
+				border:1px solid rgb(203, 224, 243);
+				text-align: center;
+				white-space: nowrap;
+	  		}
+
+	</style>
+</head>
+
+<body>
+	<p style="color:#4588db;font-size:200%;">
+		<b>This is a complete form demonstration<br>
+	</p>
+
+<form style="font-size: 150%;" 
+      action="/backend.php"
+      autocomplete="on">
+	
+	<fieldset>
+		<legend>Get the Clarusway User ID:</legend>
+		<label for="fname">First name:</label><br>
+  	<input type="text" id="fname" name="fname" value="Clarusway"><br>
+  	<label for="lname">Last name:</label><br>
+  	<input type="text" id="lname" name="lname" value="Test"><br><br>  
+  </fieldset>
+  
+	<p >Please select one of the browsers below </p>
+	<input list="browsers" name="browser">
+	<datalist style="color:#0b4892" id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome" selected>
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+
+  <p style="color:#79B2FA;font-size:100%;"></p>Select one of the animals</p>  
+	<label for="animals">Select your favorite animal:</label>
+	<select id="animals" name="animals">
+	  <option value="cat" selected>cat</option>
+	  <option value="dog">dog</option>
+	  <option value="elephant">elephant</option>
+	  <option value="tiger">tiger</option>
+	</select>
+   <br>
+   <br>
+   <textarea name="message" rows="10" cols="30">The dogs are the best friends of humans.</textarea>
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select the easiest to learn:</p>  
+   <input type="radio" id="html" name="fav_language" value="HTML">
+   <label for="html">HTML</label><br>
+   <input type="radio" id="css" name="fav_language" value="CSS">
+   <label for="css">CSS</label><br>
+   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+   <label for="javascript">JavaScript</label>
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select the vehicle to travel:</p>     
+   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+   <label for="vehicle1"> I have a bike</label><br>
+   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+   <label for="vehicle2"> I have a car</label><br>
+   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+   <label for="vehicle3"> I have a boat</label>
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select your favorite color:</p>     
+   <label for="favcolor">Color:</label>
+   <input type="color" id="favcolor" name="favcolor">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select your birthdate:</p>     
+   <label for="birthday">Birthday:</label>
+   <input type="date" id="birthday" name="birthday">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Min/Max date selection:</p>     
+   <label for="datemax">Enter a date before 1980-01-01:</label>
+   <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+   <label for="datemin">Enter a date after 2000-01-01:</label>
+   <input type="date" id="datemin" name="datemin" min="2000-01-02">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>EMail demonstration:</p>     
+   <label for="email">Enter your email:</label>
+   <input type="email" id="email" name="email">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select your CV/Resume:</p>     
+   <label for="myfile">Select your resume:</label>
+   <input type="file" id="myfile" name="myfile">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Select the volume:</p>     
+   <label for="vol">Volume (between 0 and 50):</label>
+   <input type="range" id="vol" name="vol" min="0" max="1000">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Search from files:</p>     
+   <label for="gsearch">Search your local drive:</label>
+   <input type="search" id="gsearch" name="gsearch">
+
+   <br>
+   <p style="color:#79B2FA;font-size:100%;"></p>Please type in your phone Nr:</p>    
+   <label for="phone">Number:</label>
+   <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  <br>
+  <br>
+  <hr>
+  
+  <input type="submit" value="Submit">
+  <button type="submit" value="Submit">Send to Server</button>
+  <input type="reset">
+
+</form>  
+	
+</body>
+</html>
