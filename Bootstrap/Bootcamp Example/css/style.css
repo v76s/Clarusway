@@ -6,6 +6,7 @@
   color: #EA3D62;
 }
 
+/* The ::before selector inserts something before the content of each selected element(s). */
 body::before{
   content: '';
   height: 75px;
@@ -13,6 +14,7 @@ body::before{
   display: block;
 }
 
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
 @media (min-width:768px) {
   .news-input{
     width:50%;
