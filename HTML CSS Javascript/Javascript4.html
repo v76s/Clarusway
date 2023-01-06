@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarusway</title>   
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarusway</title>
+  </head>
 
-    <h3 align="center">Simple Math with numbers ...</h3>
-    <body>
-        <table>
-        <tr>
-        <td> <input type="text" name="a" id="first" placeholder="Enter first number"> </td>
-        </tr>
-        <tr>
-        <td> <input type="text" name="b" id="second" placeholder="Enter second number"> </td>
-        </tr>
-        <tr>
-        <td> <button onclick= "mul()" >Submit</button> </td>
-        </tr>
-        </table>
-        <div id="mul"></div>
-        <div id= "div"></div>
-    </body>
+  <h3 align="center">Simple Math with numbers ...</h3>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <input
+            type="text"
+            name="a"
+            id="first"
+            placeholder="Enter first number"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            name="b"
+            id="second"
+            placeholder="Enter second number"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><button onclick="mul()">Submit</button></td>
+      </tr>
+    </table>
+    <div id="mul"></div>
+    <div id="div"></div>
+  </body>
 
-        <script type="text/javascript">
-                    function mul()
-                    {
-                    var a,b,Mul,Div;
-                    a = parseInt(document.getElementById ("first").value);
-                    b = parseInt(document.getElementById ("second").value);
-                    Mul = a*b; //Multiplication of two numbers
-                    Div = a/b; //Division of two numbers
-                    //To print the result
-                    document.getElementById ("mul").innerHTML ="Multiplication of "+a+"*"+b+"= "+Mul;
-                    document.getElementById ("div").innerHTML ="Division of "+a+"/"+b+"= " +Div;
-                    }
-        </script>
+  <script type="text/javascript">
+    function mul() {
+      var a, b, Mul, Div;
+      a = parseInt(document.getElementById("first").value);
+      b = parseInt(document.getElementById("second").value);
+      Mul = a * b; //Multiplication of two numbers
+      Div = a / b; //Division of two numbers
+      //To print the result
+      document.getElementById("mul").innerHTML =
+        "Multiplication of " + a + "*" + b + "= " + Mul;
+      document.getElementById("div").innerHTML =
+        "Division of " + a + "/" + b + "= " + Div;
+    }
+  </script>
 </html>
