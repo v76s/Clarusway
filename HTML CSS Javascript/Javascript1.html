@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarusway</title>
+    <title>Clarusway</title>  
   </head>
   <body onload="myFunction()">
     <h2>What Can JavaScript Do?</h2>
@@ -23,17 +23,18 @@
     >
       Alert
     </button>
-    <script>
+    <script>      
       var age = prompt("Please enter your age ...", "15");
       document.getElementById("output").innerHTML =
         "You have entered " + age + " for the age prompt";
-      console.log(age); /* Display to the console */
+      console.log(age);
       alert(age);
       window.alert(age);
-      document.write(age);
+      document.write(age);     
     </script>
     <button onclick="window.print()">Print this page</button>
-    <!-- Demonstrate the debug ability ... -->
+
+    <!-- Demonstrate the debugging ability ... -->
     <!--
       Javascript keywords : 
       var		Declares a variable
@@ -47,5 +48,10 @@
       try		Implements error handling to a block of statements
 
             -->
+
+
+    <!-- Demonstrate using an external js file -->
+    <!-- <script src="Javascript1_external.js"></script> -->
+
   </body>
 </html>
