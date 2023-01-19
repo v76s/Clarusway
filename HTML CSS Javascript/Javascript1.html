@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarusway</title>  
+    <title>Clarusway</title>
+
   </head>
+
   <body onload="myFunction()">
     <h2>What Can JavaScript Do?</h2>
     <p id="output">
       The result modified by Javascript will be displayed here ...
     </p>
+
+    <script>
+      function myFunction()
+      {
+          var age = prompt("Please enter your age ...", "15");
+          document.getElementById("output").innerHTML =
+            "You have entered " + age + " for the age prompt";
+          console.log(age); /* Display to the console */
+          alert(age);
+          window.alert(age);
+          document.write(age);
+      }
+    </script>
+
     <button
       type="button"
       onclick='document.getElementById("output").innerHTML = "Now the content changed by Javascript"'
     >
       OK
     </button>
-    <button
-      type="button"
-      onclick='alert("Title of the Alert","User pressed the OK button")'
-    >
-      Alert
-    </button>
-    <script>      
-      var age = prompt("Please enter your age ...", "15");
-      document.getElementById("output").innerHTML =
-        "You have entered " + age + " for the age prompt";
-      console.log(age);
-      alert(age);
-      window.alert(age);
-      document.write(age);     
-    </script>
+    <button type="button" onclick='alert("Title of the Alert","User pressed the OK button")'>Alert</button>
     <button onclick="window.print()">Print this page</button>
 
     <!-- Demonstrate the debugging ability ... -->
@@ -49,9 +52,7 @@
 
             -->
 
-
     <!-- Demonstrate using an external js file -->
     <!-- <script src="Javascript1_external.js"></script> -->
-
   </body>
 </html>
