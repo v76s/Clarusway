@@ -49,7 +49,7 @@ select name from pragma_table_info('customers') order by cid
 ```sql
 select * from INFORMATION_SCHEMA.COLUMNS
   where COLUMN_NAME like '%faculty%'
-  order by TABLE_NAME <br>
+  order by TABLE_NAME 
 ```
 
 ##### Result : 13
