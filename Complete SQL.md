@@ -76,7 +76,28 @@ select invoiceid, BillingCity, BillingCountry from invoices;
 ##### Result : Only invoiceid, BillingCity, BillingCountry column contents are displayed.
 ##### Info   : We can ask any existing column from SQL. If we need all columns we ask it with "*".
 ---
-
+##### <span style="color:red">SQLite: Dealing with DateTime values</span>
+```sql
+select * from invoices;
+select 
+invoiceId, 
+CustomerId,
+InvoiceDate, 
+strftime('%Y', InvoiceDate) as BillingYear,
+strftime('%m', InvoiceDate) as BillingMonth,
+strftime('%d', InvoiceDate) as BillingDay,
+strftime('%H', InvoiceDate) as BillingHour,
+strftime('%M', InvoiceDate) as BillingMinute,
+strftime('%S', InvoiceDate) as BillingSecond,
+BillingAddress, 
+BillingCity, 
+BillingState, 
+BillingCountry,
+BillingPostalCode,
+Total from invoices
+```
+##### Result : Datetime values parsed displayed.
+---
 ##### <span style="color:red">General: How do we select multiple columns, the desired columns from a table?</span>
 ```sql
 select invoiceid, BillingCity, BillingCountry from invoices;
