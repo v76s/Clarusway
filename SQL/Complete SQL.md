@@ -509,6 +509,23 @@ select invoices.*,
 
 ---
 
+##### <span style="color:red">General: Using self-join.</span>
+
+```sql
+
+select e1.EmployeeId, 
+    e1.FirstName, 
+    e1.LastName,
+    e1.ReportsTo, 
+    e2.FirstName as SupervisorFirstName, 
+    e2.LastName as SupervisorLastName
+from employees e1
+left outer join employees e2 on e1.ReportsTo = e2.EmployeeID
+
+```
+##### Result : Employees displayed with their Supervisors associated.
+
+
 ##### <span style="color:red">General: Display a list of tracks of tracks.TrackId, Name, albums.Title, media_types.Name, genres.Name, tracks.composer, tracks.unitprice and order it by TrackId ascending </span>
 
 ```sql
