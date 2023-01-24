@@ -1127,10 +1127,10 @@ BEGIN
 END;
 
 INSERT INTO Managers (FirstName,LastName, Email, Address)
-VALUES('John','Wick','some-email','Washington');
+VALUES('John','Wick','some-email','Washington DC');
 
 INSERT INTO Managers (FirstName,LastName, Email, Address)
-VALUES ('John', 'Doe', 'johnwick@clarusway.com', 'Washington');
+VALUES ('John', 'Doe', 'johnwick@clarusway.com', 'Washington DC');
 ```
 
 ## <span style="color:red">PostgreSQL Workout
