@@ -1103,6 +1103,36 @@ from Employees
 
 ---
 
+##### <span style="color:red">General: How to use triggers to control e-mails?
+
+</span>
+
+```sql
+CREATE TABLE Managers (
+	id integer PRIMARY KEY,
+	FirstName text NOT NULL,
+	LastName text NOT NULL,
+	Email text NOT NULL,
+	Address text NOT NULL	
+);
+
+CREATE TRIGGER validate_email
+   BEFORE INSERT ON Managers
+BEGIN
+   SELECT
+      CASE
+	      WHEN NEW.Email NOT LIKE '%@%.%' THEN
+   	      RAISE (ABORT,'Invalid email address')
+       END;
+END;
+
+INSERT INTO Managers (FirstName,LastName, Email, Address)
+VALUES('John','Wick','some-email','Washington');
+
+INSERT INTO Managers (FirstName,LastName, Email, Address)
+VALUES ('John', 'Doe', 'johnwick@clarusway.com', 'Washington');
+```
+
 ## <span style="color:red">PostgreSQL Workout
 
 </span>
