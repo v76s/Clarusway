@@ -4,13 +4,13 @@
 
 ---
 
-##### <span style="color:red;font-weight:bold">1. How to install WSL in Windows?</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">1. How to install WSL in Windows?</span>
 
     Please check the details in /media/How to install WSL2 on windows.pdf file.
 
 ---
 
-##### <span style="color:red;font-weight:bold">2. How to install Ubuntu in VirtualBox?</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">2. How to install Ubuntu in VirtualBox?</span>
 
     Please follow the link below. Basically we need to install VirtualBox application in our host computer and later download the appropriate .iso file for Ubuntu.
 
@@ -18,7 +18,7 @@
 
 ---
 
-##### <span style="color:red;font-weight:bold">3. Linux-Windows comparison</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">3. Linux-Windows comparison</span>
 
     You may find the comparison link below;
 
@@ -26,7 +26,7 @@
 
 ---
 
-##### <span style="color:red;font-weight:bold">4. Some of the server links on Linux</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">4. Some of the server links on Linux</span>
 
     You may find the famous linux http servers in links below;
 
@@ -38,7 +38,7 @@
 
 ---
 
-##### <span style="color:red;font-weight:bold">5. Linux Distro List</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">5. Linux Distro List</span>
 
     The complete list of recent Linux distributions:
 
@@ -46,7 +46,7 @@
 
 ---
 
-##### <span style="color:red;font-weight:bold">6. Using Linux on Different Platforms</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">6. Using Linux on Different Platforms</span>
 
     Alternatives of Linux on different platforms:
 
@@ -60,7 +60,7 @@ http://topologi-linux.sourceforge.net/index.php?menu=3
 
 ---
 
-##### <span style="color:red;font-weight:bold">7. How to use WSL on Linux</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">7. How to use WSL on Linux</span>
 
     Another common way for using Linux on Windows is “WSL” which stands for “Windows Subsystem for Linux”. This alternative has almost all the capabilities of a Linux distro. At least it is more than enough for our purposes in this course.
 
@@ -86,13 +86,13 @@ Steps to follow for WSL:
 
 ---
 
-##### <span style="color:red;font-weight:bold">8. pwd command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">8. pwd command in bash</span>
 
     pwd displays the current path of the working directory.
 
 ---
 
-##### <span style="color:red;font-weight:bold">9. ls command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">9. ls command in bash</span>
 
     ls command displays the list of the files and folders in the current directory
 
@@ -104,7 +104,7 @@ ls -t : sort by time (newest first)
 
 ---
 
-##### <span style="color:red;font-weight:bold">10. cd command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">10. cd command in bash</span>
 
     cd [dir]	change (current) directory
     cd ..	change current directory to one level up
@@ -113,7 +113,7 @@ ls -t : sort by time (newest first)
 
 ---
 
-##### <span style="color:red;font-weight:bold">11. mkdir command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">11. mkdir command in bash</span>
 
     mkdir creates a new directory, also it's possible to create multiple files.
 
@@ -122,14 +122,14 @@ mkdir [dir1] [dir2] [dir3]<br> creates 3 directories as displayed above.
 
 ---
 
-##### <span style="color:red;font-weight:bold">12. rmdir command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">12. rmdir command in bash</span>
 
     rmdir [dir]	deletes the directory only if it's empty.
     If it contains some items inside, it will display an error.
 
 ---
 
-##### <span style="color:red;font-weight:bold">13. touch command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">13. touch command in bash</span>
 
     The purpose of the touch command is to create a single or multiple files.
 
@@ -138,13 +138,13 @@ touch [file1] [file2] [file3] ... creates a single or multiple files.
 
 ---
 
-##### <span style="color:red;font-weight:bold">14. rm command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">14. rm command in bash</span>
 
     rm [file] command deletes a file.
 
 ---
 
-##### <span style="color:red;font-weight:bold">15. cp command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">15. cp command in bash</span>
 
     cp command copies a source file as a target file in the same or a different directory.
 
@@ -156,7 +156,7 @@ cp -n override the existing file without interaction.
 
 ---
 
-##### <span style="color:red;font-weight:bold">16. mv command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">16. mv command in bash</span>
 
     The purpose of the mv command is to move the file from source to target location. While moving it, it's also possible to rename the file.
 
@@ -164,7 +164,7 @@ mv [source_file] [target_file]
 
 ---
 
-##### <span style="color:red;font-weight:bold">17. echo command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">17. echo command in bash</span>
 
     The purpose of echo command is to display a message. Re-direction operator makes it possible to save the message in a file as well.
 
@@ -174,7 +174,7 @@ echo "message" >> [target_file]<br> Saves but appends the message to the file co
 
 ---
 
-##### <span style="color:red;font-weight:bold">18. cat command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">18. cat command in bash</span>
 
     How to use the 'cat' command:
 
@@ -184,7 +184,7 @@ cat [file1] [file2] ... [fileN] displays the contents of the files.
 
 ---
 
-##### <span style="color:red;font-weight:bold">19. ls command with filter in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">19. ls command with filter in bash</span>
 
     How to use the 'ls' command with single/multiple character filters:
 
@@ -194,7 +194,7 @@ cat ?tml.txt displays the contents of the files that starts with any character b
 
 ---
 
-##### <span style="color:red;font-weight:bold">20. find command usage</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">20. find command usage</span>
 
     Find command helps us to find a specific file or a pattern.
 
@@ -209,7 +209,7 @@ find bin/ -name ‘see’
 
 ---
 
-##### <span style="color:red;font-weight:bold">21. man command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">21. man command in bash</span>
 
     "man" command displays info about the usage of a specific command.
 
@@ -219,7 +219,7 @@ man dmesg : Display info about dmesg command
 
 ---
 
-##### <span style="color:red;font-weight:bold">22. open command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">22. open command in bash</span>
 
     "open" command executes the file with the registered application.
 
@@ -231,7 +231,7 @@ open latest.zip
 
 ---
 
-##### <span style="color:red;font-weight:bold">23. alias command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">23. alias command in bash</span>
 
     "alias" command creates a shortcut for a command.
 
@@ -241,7 +241,7 @@ alias ll=’ls -al’ Here typing ll lists the files with all and detail list.
 
 ---
 
-##### <span style="color:red;font-weight:bold">24. less command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">24. less command in bash</span>
 
     "less" command displays the file content similar to cat command but from top to a limit.
 
@@ -251,7 +251,7 @@ alias ll=’ls -al’ Here typing ll lists the files with all and detail list.
 
 ---
 
-##### <span style="color:red;font-weight:bold">25. tail command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">25. tail command in bash</span>
 
     "tail" command displays the file content similar to cat command but the last 10 lines, useful to observe log files.
 
@@ -261,7 +261,7 @@ tail -f /var/log/system.log
 
 ---
 
-##### <span style="color:red;font-weight:bold">26. grep command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">26. grep command in bash</span>
 
     "grep" command shows the occurance of a searched text entry in a file.
 
@@ -271,7 +271,7 @@ grep document.getElementById index.md
 
 ---
 
-##### <span style="color:red;font-weight:bold">27. systemctl command in bash</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">27. systemctl command in bash</span>
 
     "systemctl" command displays a list of the background services.
 
@@ -285,7 +285,7 @@ alias running_services='systemctl list-units --type=service --state=running'
 
 ---
 
-##### <span style="color:red;font-weight:bold">28. A List of bash commands</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">28. A List of bash commands</span>
 
 - ls: List files in a directory
 - ls -a: List files in a directory including the hidden files and folders
@@ -455,7 +455,7 @@ alias running_services='systemctl list-units --type=service --state=running'
 
 ---
 
-##### <span style="color:red;font-weight:bold">29. Investigation of the Linux Directory Structure </span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">29. Investigation of the Linux Directory Structure </span>
 
 - / this is the top level root directory
 - /bin : Essential user binaries
@@ -483,7 +483,7 @@ alias running_services='systemctl list-units --type=service --state=running'
 
 ---
 
-##### <span style="color:red;font-weight:bold">30. project1 implementation</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">30. Project1 implementation</span>
 
 Info: The purpose of this project is to create a project folder and manage the folders inside of it. Please follow the instructions step by step and read the instructions associated with every action taken.<br>
 
@@ -521,7 +521,7 @@ END OF PROJECT1
 
 ---
 
-##### <span style="color:red;font-weight:bold">31. project2 implementation</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">31. Project2 implementation</span>
 
 Info : The purpose of this project is to demonstrate how to create and copy and move files/folders. Step by step perform the operations in linux bash shell.
 
@@ -600,7 +600,7 @@ END OF PROJECT2
 
 ---
 
-##### <span style="color:red;font-weight:bold">32. project3 implementation</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">32. Project3 implementation</span>
 
 Info : The purpose of this project is to investigate the file and folder attributes. Step by step perform the operations in linux bash shell.
 
@@ -640,7 +640,7 @@ Try to run the script and see the error (permission denied)
 
     ls scripts/installer.sh -l
 
-Display the installer.sh with the details.User-Group-Everyone is the sequence of attributes for the displayed information of our script.<br>
+Display the installer.sh with the details.User-Group-Other is the sequence of attributes for the displayed information of our script.<br>
 Read-Write-Execute is the sequence of the file attributes for the information of our script.
 
     chmod 777 scripts/installer.sh
@@ -651,11 +651,11 @@ chmod command changes the attributes of the file as desired.
 
 Updates the user/group/everyone as such.
 
-    chmod uga=rwx installer.sh
+    chmod ugo=rwx installer.sh
 
 Updates the permission for user/group/everyone rwx.
 
-    chmod uga=rw installer.sh
+    chmod ugo=rw installer.sh
 
 Updates the permission for user/group/everyone rw.
 
@@ -666,6 +666,10 @@ Updates the read-write permissions for user/group/everyone
     chmod 664 *.sh
 
 Updates all the files with sh extension as 664.
+
+    chmod -R ugo=rwx *.sh
+
+Recursively assigns the attributes to the file types
 
     mv installer.sh .installer.sh
 
@@ -679,7 +683,7 @@ END OF PROJECT3
 
 ---
 
-##### <span style="color:red;font-weight:bold">33. project4 implementation</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">33. Project4 implementation</span>
 
 Info : The purpose of this project is to provide an introduction to bash shell scripts. Step by step perform the operations in linux bash shell.
 
@@ -718,7 +722,7 @@ END OF PROJECT4
 
 ---
 
-##### <span style="color:red;font-weight:bold">34. project5 implementation</span>
+##### <span style="color:red;font-weight:bold;font-size: 30px;">34. Project5 implementation</span>
 
 Info : The purpose of this project is to read some details from a shell script. Step by step perform the operations in linux bash shell.
 
