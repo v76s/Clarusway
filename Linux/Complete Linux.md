@@ -3,20 +3,20 @@
 **<span style="color:Orange text-align: center;">All the titles that we covered in Linux Sessions**</span>
 
 ---
-##### <span style="color:red">1. How to install WSL in Windows?</span>
+##### <span style="color:red;font-size:30">1. How to install WSL in Windows?</span>
     Please check the details in /media/How to install WSL2 on windows.pdf file. 
 ---
-##### <span style="color:red">2. How to install Ubuntu in VirtualBox?</span>
+##### <span style="color:red;font-size:30">2. How to install Ubuntu in VirtualBox?</span>
     Please follow the link below. Basically we need to install VirtualBox application in our host computer and later download the appropriate .iso file for Ubuntu.    
 [Ubuntu in VirtualBox](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview)
 
 ---   
-##### <span style="color:red">3. Linux-Windows comparison</span>
+##### <span style="color:red;font-size:30">3. Linux-Windows comparison</span>
     You may find the comparison link below; 
 [Windows-Linux Comparison](http://www.linuxandubuntu.com/home/10-reasons-why-linux-is-better-than-windows#:~:text=Linux%20can%20be%20installed%20and,as%20per%20the%20user%20requirements.)
 
 ---   
-##### <span style="color:red">4. Some of the server links on Linux</span>
+##### <span style="color:red;font-size:30">4. Some of the server links on Linux</span>
     You may find the famous linux http servers in links below; 
 [Apache HTTP Server](https://httpd.apache.org/)<br>
 [NGinx](https://www.nginx.com/resources/glossary/nginx/)<br>
@@ -26,13 +26,13 @@
 
 ---
 
-##### <span style="color:red">5. Linux Distro List</span>
+##### <span style="color:red;font-size:30">5. Linux Distro List</span>
     The complete list of recent Linux distributions: 
 [Linux Distribution HTTP Server](https://upload.wikimedia.org/wikipedia/commons/b/b5/Linux_Distribution_Timeline_21_10_2021.svg)<br/>
 
 ---
 
-##### <span style="color:red">6. Using Linux on Different Platforms</span>
+##### <span style="color:red;font-size:30">6. Using Linux on Different Platforms</span>
     Alternatives of Linux on different platforms: 
 LMS 		: https://lms.clarusway.com/mod/lti/view.php?id=1317<br>
 WSL		: https://www.microsoft.com/en-us/search/shop/apps?q=wsl<br>
@@ -45,7 +45,7 @@ http://topologi-linux.sourceforge.net/index.php?menu=3
 ---
 
 
-##### <span style="color:red">7. How to use WSL on Linux</span>
+##### <span style="color:red;font-size:30">7. How to use WSL on Linux</span>
     Another common way for using Linux on Windows is “WSL” which stands for “Windows Subsystem for Linux”. This alternative has almost all the capabilities of a Linux distro. At least it is more than enough for our purposes in this course.
 
 https://aka.ms/wslstore
@@ -70,11 +70,11 @@ configuration on one of these links: <br>
 
 ---
 
-##### <span style="color:red">8. pwd command in bash</span>
+##### <span style="color:red;font-size:30">8. pwd command in bash</span>
     pwd displays the current path of the working directory. 
 ---
 
-##### <span style="color:red">9. ls command in bash</span>
+##### <span style="color:red;font-size:30">9. ls command in bash</span>
     ls command displays the list of the files and folders in the current directory
 
 ls, ls -a, and ls -al are mostly used options for ls command.<br>
@@ -86,15 +86,16 @@ ls -t : sort by time (newest first)
 ---
 
 
-##### <span style="color:red">10. cd command in bash</span>
-    cd [dir]	change (current) directory<br>
-    cd ..	change current directory to one level up<br>
-    cd / change current directory to the root directory<br>
+##### <span style="color:red;font-size:30">10. cd command in bash</span>
+
+    cd [dir]	change (current) directory
+    cd ..	change current directory to one level up
+    cd / change current directory to the root directory
     cd ~ change current directory to the home directory
 
 ---
 
-##### <span style="color:red">11. mkdir command in bash</span>
+##### <span style="color:red;font-size:30">11. mkdir command in bash</span>
     mkdir creates a new directory, also it's possible to create multiple files.
 
 mkdir [dir]	create a new directory<br>
@@ -102,24 +103,24 @@ mkdir [dir1] [dir2] [dir3]<br> creates 3 directories as displayed above.
 
 ---
 
-##### <span style="color:red">12. rmdir command in bash</span>
+##### <span style="color:red;font-size:30">12. rmdir command in bash</span>
     rmdir [dir]	deletes the directory only if it's empty.
     If it contains some items inside, it will display an error. 
 
 ---
 
-##### <span style="color:red">13. touch command in bash</span>
+##### <span style="color:red;font-size:30">13. touch command in bash</span>
     The purpose of the touch command is to create a single or multiple files.
 Example:<br>
 touch [file1] [file2] [file3] ... creates a single or multiple files. 
 
 ---
 
-##### <span style="color:red">14. rm command in bash</span>
+##### <span style="color:red;font-size:30">14. rm command in bash</span>
     rm [file] command deletes a file.
 --- 
 
-##### <span style="color:red">15. cp command in bash</span>
+##### <span style="color:red;font-size:30">15. cp command in bash</span>
     cp command copies a source file as a target file in the same or a different directory.
 cp [source_file] [target_file] copies the source file as a target file. It's also possible to rename the file while copying.<br>
 
@@ -129,14 +130,14 @@ cp -n override the existing file without interaction.
 
 --- 
 
-##### <span style="color:red">16. mv command in bash</span>
+##### <span style="color:red;font-size:30">16. mv command in bash</span>
     The purpose of the mv command is to move the file from source to target location. While moving it, it's also possible to rename the file.
 
 mv [source_file] [target_file]
 
 --- 
 
-##### <span style="color:red">17. echo command in bash</span>
+##### <span style="color:red;font-size:30">17. echo command in bash</span>
     The purpose of echo command is to display a message. Re-direction operator makes it possible to save the message in a file as well. 
 echo "message" displays the message<br>
 echo "message" > [target_file]<br> Saves the message to file.
@@ -144,7 +145,7 @@ echo "message" >> [target_file]<br> Saves but appends the message to the file co
 
 --- 
 
-##### <span style="color:red">18. cat command in bash</span>
+##### <span style="color:red;font-size:30">18. cat command in bash</span>
     How to use the 'cat' command:
 cat [file1] displays the content of the file.<br>
 cat [file1] [file2] ... [fileN] displays the contents of the files. 
@@ -153,7 +154,7 @@ cat [file1] [file2] ... [fileN] displays the contents of the files.
 --- 
 
 
-##### <span style="color:red">19. ls command with filter in bash</span>
+##### <span style="color:red;font-size:30">19. ls command with filter in bash</span>
     How to use the 'ls' command with single/multiple character filters:
 cat a*.* displays all the files starting with a character.<br>
 cat ?tml.txt displays the contents of the files that starts with any character but ends with "tml.txt" 
@@ -162,7 +163,7 @@ cat ?tml.txt displays the contents of the files that starts with any character b
 --- 
 
 
-##### <span style="color:red">20. find command usage</span>
+##### <span style="color:red;font-size:30">20. find command usage</span>
     Find command helps us to find a specific file or a pattern. 
 find -name ‘*.js’ : Find all files with js extension<br>
 find folder1 folder2 -name [file1.txt] : Find file1.txt in folder1 and folder2<br>
@@ -175,7 +176,7 @@ find bin/ -name ‘see’
 
 --- 
 
-##### <span style="color:red">21. man command in bash</span>
+##### <span style="color:red;font-size:30">21. man command in bash</span>
     "man" command displays info about the usage of a specific command.
 Example:<br>
 man dmesg : Display info about dmesg command 
@@ -183,7 +184,7 @@ man dmesg : Display info about dmesg command
 
 --- 
 
-##### <span style="color:red">22. open command in bash</span>
+##### <span style="color:red;font-size:30">22. open command in bash</span>
     "open" command executes the file with the registered application.
 Example:<br>
 open 1.html<br>
@@ -193,7 +194,7 @@ open latest.zip
 
 --- 
 
-##### <span style="color:red">23. alias command in bash</span>
+##### <span style="color:red;font-size:30">23. alias command in bash</span>
     "alias" command creates a shortcut for a command.
 Example:<br>
 alias ll=’ls -al’  Here typing ll lists the files with all and detail list.
@@ -202,7 +203,7 @@ alias ll=’ls -al’  Here typing ll lists the files with all and detail list.
 --- 
 
 
-##### <span style="color:red">24. less command in bash</span>
+##### <span style="color:red;font-size:30">24. less command in bash</span>
     "less" command displays the file content similar to cat command but from top to a limit.
 Example:<br>
 alias ll=’ls -al’  Here typing ll lists the files with all and detail list.
@@ -210,7 +211,7 @@ alias ll=’ls -al’  Here typing ll lists the files with all and detail list.
 
 --- 
 
-##### <span style="color:red">25. tail command in bash</span>
+##### <span style="color:red;font-size:30">25. tail command in bash</span>
     "tail" command displays the file content similar to cat command but the last 10 lines, useful to observe log files.
 
 Example:<br>
@@ -219,7 +220,7 @@ tail -f /var/log/system.log
 
 --- 
 
-##### <span style="color:red">26. grep command in bash</span>
+##### <span style="color:red;font-size:30">26. grep command in bash</span>
     "grep" command shows the occurance of a searched text entry in a file.
 
 Example:<br>
@@ -228,7 +229,7 @@ grep document.getElementById index.md
 
 --- 
 
-##### <span style="color:red">27. systemctl command in bash</span>
+##### <span style="color:red;font-size:30">27. systemctl command in bash</span>
     "systemctl" command displays a list of the background services.
 
 Example:<br>
@@ -241,7 +242,7 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 
 --- 
 
-##### <span style="color:red">28. A List of bash commands</span>
+##### <span style="color:red;font-size:30">28. A List of bash commands</span>
 - ls: List files in a directory
 - ls -a: List files in a directory including the hidden files and folders
 - pwd: Show directory that we are currently working in.
@@ -382,8 +383,8 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 
 --- 
 
-##### <span style="color:red">29. Investigation of the Linux Directory Structure </span>
-  - / this is the root directory 
+##### <span style="color:red;font-size:30">29. Investigation of the Linux Directory Structure </span>
+  - / this is the top level root directory 
   - /bin : Essential user binaries 
   - /sbin : Essential system administration binaries.
   - /boot : Files needed to boot the system.
@@ -409,195 +410,274 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 
 --- 
 
-##### <span style="color:red">30. project1 implementation</span>
+##### <span style="color:red;font-size:30">30. project1 implementation</span>
     
-    Info: The purpose of this project is to create a project folder and manage the folders inside of it. Please follow the instructions step by step and read the instructions associated with every action taken. 
+Info: The purpose of this project is to create a project folder and manage the folders inside of it. Please follow the instructions step by step and read the instructions associated with every action taken.<br>
 
-* pwd<br>
-  Path of the working directory (pwd) command displays where we are. 
-  It displays the absolue address from the / folder. 
-* cd<br>
-  cd command when used alone, takes the user from the current folder to the 
-  users home folder.
-* mkdir project1<br>
-* cd project1<br>
-* mkdir website1 website2 website3<br>
-  mkdir command creates a folder but multiple folder creation is also supported.
-* touch /website3/main.html<br>
-  Touch command can create an empty file in the desired directory.
-* rmdir website3<br>
-  rmdir command deletes an empty directory, the above command won't be able
-  to delete website3 folder because it's not empty, main.html is inside of it. 
-* rmdir website1 website2<br>
-  rmdir command deletes website1 and website2 successfully, they are empty.
-* rm -r website3<br>
-  rm command deletes the file and folder if -r (recursively) option is provided.
+    pwd
+
+Path of the working directory (pwd) command displays where we are. It displays the absolute address from the / folder.
+
+    cd
+
+cd command when used alone, takes the user from the current folder to the users home folder.
+
+    mkdir project1
+    cd project1
+    mkdir website1 website2 website3
+
+mkdir command creates a folder but multiple folder creation is also supported.
+
+    touch /website3/main.html
+    
+Touch command can create an empty file in the desired directory.
+
+    rmdir website3
+    
+rmdir command deletes an empty directory, the above command won't be able to delete website3 folder because it's not empty, main.html is inside of it. 
+
+    rmdir website1 website2
+
+rmdir command deletes website1 and website2 successfully, they are empty.
+
+    rm -r website3
+
+rm command deletes the file and folder if -r (recursively) option is provided.
 
 END OF PROJECT1
 
 --- 
 
 
-##### <span style="color:red">31. project2 implementation</span>
+##### <span style="color:red;font-size:30">31. project2 implementation</span>
 
-    Info : The purpose of this project is to demonstrate how to create and copy and move files/folders. Step by step perform the operations in linux bash shell.
+Info : The purpose of this project is to demonstrate how to create and copy and move files/folders. Step by step perform the operations in linux bash shell.    
  
-* pwd<br>	
-  Path of the working directory (pwd) command displays where we are. 
-  It displays the absolue address from the / folder.
-* cd<br>
-  cd command when used alone, takes the user from the current folder to the users home folder.
-* mkdir project2<br>
-* cd project2<br>
-* mkdir website1 website2<br>
-  mkdir command creates directories passed as parameter
-* touch website1/main.html<br>
-  Touch command can create an empty file in the desired directory.
-* echo "<!DOCTYPE html>" > website1/main.html<br>
-  echo command writes "<!DOCTYPE html>" inside website1/main.html file.
-* echo 
-  "<html><head></head><body></body></html>"  >> website1/main.html<br>
-  The above echo command with >> operator appends new lines of text to the existing text.
-* cat website1/main.html<br>
-  cat command displays the content of the file. 
-* ls website1/main.html -al<br>
-  ls command with a file specification displays the file details.
-* echo "h3 { color : dodgerblue } " > website1/site.css<br>
-  echo command creates and fullfills the content with above details. We could be creating the file with touch command and later open one of our favorite editor(nano, vim, VSCode, gedit, etc..) later
-  modify and save our content as we needed.<br>
-* cat website1/main.html website1/site.css<br>
-  cat command will display both file contents with the specified parameters above. 
-* touch website1/1.html website1/2.html website1/3.html<br>
-  touch command will create these 3 files 
-* ls website1/ -al<br>
-  ls command displays the content of website1, with "all" and "list detailed" option
-* ls website1/*.css<br>
-  ls command will display all the files with css extension. 
-* ls website1/ "*.html"<br>
-  ls command will display all the files with html extension.
-* ls website1/{1..5}.html<br>
-* cp website1/{1..5}.html website2/<br>
-  cp command will copy only the main.html here, why?
-* mv website1/m*{1..5}.html website2/<br>
-  move command will only move 1 file, why?
+    pwd
+
+Path of the working directory (pwd) command displays where we are. It displays the absolue address from the / folder.
+
+    cd
+
+cd command when used alone, takes the user from the current folder to the users home folder.
+  
+    mkdir project2  
+    cd project2
+    mkdir website1 website2
+    
+mkdir command creates directories passed as parameter
+
+    touch website1/main.html
+
+Touch command can create an empty file in the desired directory.
+
+    echo "<!DOCTYPE html>" > website1/main.html
+
+echo command writes "<!DOCTYPE html>" inside website1/main.html file.
+
+    echo "<html><head></head><body></body></html>"  >> website1/main.html
+
+The above echo command with >> operator appends new lines of text to the existing text.
+
+    cat website1/main.html
+
+cat command displays the content of the file.
+
+    ls website1/main.html -al
+
+ls command with a file specification displays the file details.
+
+    echo "h3 { color : dodgerblue } " > website1/site.css
+
+echo command creates and fullfills the content with above details. We could be creating the file with touch command and later open one of our favorite editor(nano, vim, VSCode, gedit, etc..) later modify and save our content as we needed.
+
+    cat website1/main.html website1/site.css
+
+cat command will display both file contents with the specified parameters above. 
+
+    touch website1/1.html website1/2.html website1/3.html
+
+touch command will create these 3 files
+
+    ls website1/ -al
+
+ls command displays the content of website1, with "all" and "list detailed" option
+
+    ls website1/*.css
+
+ls command will display all the files with css extension. 
+
+    ls website1/ "*.html"
+
+ls command will display all the files with html extension.
+
+    ls website1/{1..5}.html
+    cp website1/{1..5}.html website2/
+
+cp command will copy only the main.html here, why?
+
+    mv website1/m*{1..5}.html website2/
+
+move command will only move 1 file, why?
 
 END OF PROJECT2
 
 --- 
 
 
-##### <span style="color:red">32. project3 implementation</span>
+##### <span style="color:red;font-size:30">32. project3 implementation</span>
 
-    Info : The purpose of this project is to investigate the file and folder attributes. Step by step perform the operations in linux bash shell.
+Info : The purpose of this project is to investigate the file and folder attributes. Step by step perform the operations in linux bash shell.
  
-* pwd<br>	
-  Path of the working directory (pwd) command displays where we are. 
-  It displays the absolue address from the / folder.
-* cd<br>
-  cd command when used alone, takes the user from the current folder to the users home folder.
-* mkdir project3<br>
-* cd project3<br>
-* mkdir website1 website2 scripts<br>
-  mkdir command creates directories passed as parameter
-* touch scripts/installer.sh<br>
-  Touch command can create an empty file in the desired directory.
-* echo "echo This is an installer script" > scripts/installer.sh<br>
-  echo command writes the message inside the installer.sh (script file).
-* echo "top" >> scripts/installer.sh<br>
-  The above echo command with >> operator appends new lines of text to the existing text.
-* cat scripts/installer.sh -al<br>
-  cat command displays the content of the file
-* ./scripts/installer.sh<br>
-  Try to run the script and see the error (permission denied)
-* ls scripts/installer.sh -l <br>
-  Display the installer.sh with the details.<br>
-  User-Group-Everyone is the sequence of attributes for the displayed information of our script.<br>
-  Read-Write-Execute is the sequence of the file attributes for the information of our script. 
-* chmod 777 scripts/installer.sh<br>
-  chmod command changes the attributes of the file as desired.
-* chmod u=rw,og=r scripts/installer.sh
-  Updates the user/group/everyone as such.
-* chmod uga=rwx installer.sh  
-  Updates the permission for user/group/everyone rwx.
-* chmod uga=rw installer.sh  
-  Updates the permission for user/group/everyone rw.
-* chmod -R ugo=rw *.sh
-  Updates the read-write permissions for user/group/everyone
-* chmod 664 *.sh
-  Updates all the files with sh extension as 664.
-* mv installer.sh .installer.sh
-  mv command can be used to create hidden file/folder
-* mv .installer.sh installer.sh 
-  mv command can be used to set visible for hidden file/folder.
+    pwd	
+
+Path of the working directory (pwd) command displays where we are. It displays the absolue address from the / folder.
+
+    cd
+
+cd command when used alone, takes the user from the current folder to the users home folder.
+
+    mkdir project3
+    cd project3   
+    mkdir website1 website2 scripts
+
+mkdir command creates directories passed as parameter
+
+    touch scripts/installer.sh
+
+Touch command can create an empty file in the desired directory.
+
+    echo "echo This is an installer script" > scripts/installer.sh
+
+echo command writes the message inside the installer.sh (script file).
+
+    echo "top" >> scripts/installer.sh
+
+The above echo command with >> operator appends new lines of text to the existing text.
+
+    cat scripts/installer.sh -al
+
+cat command displays the content of the file
+
+    ./scripts/installer.sh
+
+Try to run the script and see the error (permission denied)
+
+    ls scripts/installer.sh -l
+
+Display the installer.sh with the details.User-Group-Everyone is the sequence of attributes for the displayed information of our script.<br>
+Read-Write-Execute is the sequence of the file attributes for the information of our script. 
+
+    chmod 777 scripts/installer.sh
+
+chmod command changes the attributes of the file as desired.
+
+    chmod u=rw,og=r scripts/installer.sh
+
+Updates the user/group/everyone as such.
+
+    chmod uga=rwx installer.sh
+
+Updates the permission for user/group/everyone rwx.
+
+    chmod uga=rw installer.sh 
+
+Updates the permission for user/group/everyone rw.
+
+    chmod -R ugo=rw *.sh
+
+Updates the read-write permissions for user/group/everyone
+
+    chmod 664 *.sh
+
+Updates all the files with sh extension as 664.
+
+    mv installer.sh .installer.sh
+
+mv command can be used to create hidden file/folder
+
+    mv .installer.sh installer.sh 
+  
+mv command can be used to set visible for hidden file/folder.
+
 END OF PROJECT3
 
 --- 
 
-##### <span style="color:red">33. project4 implementation</span>
+##### <span style="color:red;font-size:30">33. project4 implementation</span>
 
-    Info : The purpose of this project is to provide an introduction to bash shell scripts. Step by step perform the operations in linux bash shell.
+Info : The purpose of this project is to provide an introduction to bash shell scripts. Step by step perform the operations in linux bash shell.
  
-* pwd<br>	
-  Path of the working directory (pwd) command displays where we are. 
-  It displays the absolue address from the / folder.
-* cd<br>
-  cd command when used alone, takes the user from the current folder to the users home folder.
-* mkdir project4<br>
-* cd project4<br>
-* echo '#!/bin/bash' > script1.sh
-* echo 'echo THIS IS SCRIPT 1' >> script1.sh<br>
-* echo 'echo Starting the execution of the script ...' >> script1.sh<br>
-* echo "#Using comments in scripts" >> script1.sh<br>
-* echo "printf "%d mul %f = %f\n" 6 6.0 36.0" >> script1.sh<br>
-* echo "gnome-terminal"<br>
-  It's possible to run a command in a terminal as well.
+    pwd	
+  
+Path of the working directory (pwd) command displays where we are. It displays the absolue address from the / folder.
 
-* echo '#!/bin/bash' > script2.sh
-* echo 'echo THIS IS SCRIPT 2' >> script2.sh<br>
-* echo 'book="Linux Shell Scripting"' >> script2.sh<br>
-* echo 'total_chapters=8' >> script2.sh<br>
-* echo 'number_of_pages=210' >> script2.sh<br>
-* echo 'average_pages_per_chapter=26,25' >> script2.sh<br>
-* echo 'echo "Book name - $book"' >> script2.sh<br>
-* echo 'echo "Number of Chapters - $total_chapters"' >> script2.sh<br>
-* echo 'printf "Total number of pages in book - $number_of_pages\n"' >> script2.sh<br>
-* echo 'printf "Average pages in each chapter - %-.2f\n" $average_pages_per_chapter' >> script2.sh
-* chmod u=x script2.sh 
+    cd
+
+cd command when used alone, takes the user from the current folder to the users home folder.
+
+    mkdir project4
+    cd project4
+    echo '#!/bin/bash' > script1.sh
+    echo 'echo THIS IS SCRIPT 1' >> script1.sh
+    echo 'echo Starting the execution of the script ...' >> script1.sh
+    echo "#Using comments in scripts" >> script1.sh
+    echo "printf "%d mul %f = %f\n" 6 6.0 36.0" >> script1.sh
+    echo "gnome-terminal"
+  
+It's possible to run a command in a terminal as well.
+
+    echo '#!/bin/bash' > script2.sh
+    echo 'echo THIS IS SCRIPT 2' >> script2.sh
+    echo 'book="Linux Shell Scripting"' >> script2.sh
+    echo 'total_chapters=8' >> script2.sh
+    echo 'number_of_pages=210' >> script2.sh
+    echo 'average_pages_per_chapter=26,25' >> script2.sh
+    echo 'echo "Book name - $book"' >> script2.sh
+    echo 'echo "Number of Chapters - $total_chapters"' >> script2.sh
+    echo 'printf "Total number of pages in book - $number_of_pages\n"' >> script2.sh
+    echo 'printf "Average pages in each chapter - %-.2f\n" $average_pages_per_chapter' >> script2.sh
+    chmod u=x script2.sh
+
 END OF PROJECT4
 
 --- 
 
 
-##### <span style="color:red">34. project5 implementation</span>
+##### <span style="color:red;font-size:30">34. project5 implementation</span>
 
-    Info : The purpose of this project is to read some details from a shell script. Step by step perform the operations in linux bash shell.
+Info : The purpose of this project is to read some details from a shell script. Step by step perform the operations in linux bash shell.
  
-* pwd<br>	
-  Path of the working directory (pwd) command displays where we are. 
-  It displays the absolue address from the / folder.
-* cd<br>
-  cd command when used alone, takes the user from the current folder to the users home folder.
-* mkdir project5<br>
-* cd project5<br>
-* nano script.sh
-  open up nano editor or any other editor that you prefer to fill these lines below. 
+    pwd	
+  
+Path of the working directory (pwd) command displays where we are. It displays the absolue address from the / folder.
 
-#Reading variables from user input and using them
-#!/bin/bash
-#Filename: inputs.sh
-#Description: Reading the user input
+    cd
 
-read -p "What is your name? "    # -p allows to prompt user a message
-echo Hello $REPLY, please follow the instructions below;
+cd command when used alone, takes the user from the current folder to the users home folder.
 
-read -s -p "Enter your secret key:" key # -s doesn't echo input in console
-echo $key
+    mkdir project5
+    cd project5
+    nano script.sh
 
-read -p "Enter filename to be searched:"
-filename=$REPLY
-read -p "Enter path for search:" path
-echo "File $filename search matches to"
-find $path -name $filename
+open up nano editor or any other editor that you prefer to fill these lines below. 
+
+    #Reading variables from user input and using them
+    #!/bin/bash
+    #Filename: inputs.sh
+    #Description: Reading the user input
+
+    read -p "What is your name? "    # -p allows to prompt user a message
+    echo Hello $REPLY, please follow the instructions below;
+
+    read -s -p "Enter your secret key:" key # -s doesn't echo input in console
+    echo $key
+
+    read -p "Enter filename to be searched:"
+    filename=$REPLY
+    read -p "Enter path for search:" path
+    echo "File $filename search matches to"
+    find $path -name $filename
 
 END OF PROJECT5
 
