@@ -520,6 +520,10 @@ cp command will copy only the main.html here, why?
 
 move command will only move 1 file, why?
 
+    open website2/main.html
+
+open command tries to open the file with the system associated application. 
+
 END OF PROJECT2
 
 --- 
