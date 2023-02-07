@@ -408,3 +408,198 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 <br>
 
 --- 
+
+##### <span style="color:red">30. project1 implementation</span>
+    
+    Info: The purpose of this project is to create a project folder and manage the folders inside of it. Please follow the instructions step by step and read the instructions associated with every action taken. 
+
+* pwd<br>
+  Path of the working directory (pwd) command displays where we are. 
+  It displays the absolue address from the / folder. 
+* cd<br>
+  cd command when used alone, takes the user from the current folder to the 
+  users home folder.
+* mkdir project1<br>
+* cd project1<br>
+* mkdir website1 website2 website3<br>
+  mkdir command creates a folder but multiple folder creation is also supported.
+* touch /website3/main.html<br>
+  Touch command can create an empty file in the desired directory.
+* rmdir website3<br>
+  rmdir command deletes an empty directory, the above command won't be able
+  to delete website3 folder because it's not empty, main.html is inside of it. 
+* rmdir website1 website2<br>
+  rmdir command deletes website1 and website2 successfully, they are empty.
+* rm -r website3<br>
+  rm command deletes the file and folder if -r (recursively) option is provided.
+
+END OF PROJECT1
+
+--- 
+
+
+##### <span style="color:red">31. project2 implementation</span>
+
+    Info : The purpose of this project is to demonstrate how to create and copy and move files/folders. Step by step perform the operations in linux bash shell.
+ 
+* pwd<br>	
+  Path of the working directory (pwd) command displays where we are. 
+  It displays the absolue address from the / folder.
+* cd<br>
+  cd command when used alone, takes the user from the current folder to the users home folder.
+* mkdir project2<br>
+* cd project2<br>
+* mkdir website1 website2<br>
+  mkdir command creates directories passed as parameter
+* touch website1/main.html<br>
+  Touch command can create an empty file in the desired directory.
+* echo "<!DOCTYPE html>" > website1/main.html<br>
+  echo command writes "<!DOCTYPE html>" inside website1/main.html file.
+* echo 
+  "<html><head></head><body></body></html>"  >> website1/main.html<br>
+  The above echo command with >> operator appends new lines of text to the existing text.
+* cat website1/main.html<br>
+  cat command displays the content of the file. 
+* ls website1/main.html -al<br>
+  ls command with a file specification displays the file details.
+* echo "h3 { color : dodgerblue } " > website1/site.css<br>
+  echo command creates and fullfills the content with above details. We could be creating the file with touch command and later open one of our favorite editor(nano, vim, VSCode, gedit, etc..) later
+  modify and save our content as we needed.<br>
+* cat website1/main.html website1/site.css<br>
+  cat command will display both file contents with the specified parameters above. 
+* touch website1/1.html website1/2.html website1/3.html<br>
+  touch command will create these 3 files 
+* ls website1/ -al<br>
+  ls command displays the content of website1, with "all" and "list detailed" option
+* ls website1/*.css<br>
+  ls command will display all the files with css extension. 
+* ls website1/ "*.html"<br>
+  ls command will display all the files with html extension.
+* ls website1/{1..5}.html<br>
+* cp website1/{1..5}.html website2/<br>
+  cp command will copy only the main.html here, why?
+* mv website1/m*{1..5}.html website2/<br>
+  move command will only move 1 file, why?
+
+END OF PROJECT2
+
+--- 
+
+
+##### <span style="color:red">32. project3 implementation</span>
+
+    Info : The purpose of this project is to investigate the file and folder attributes. Step by step perform the operations in linux bash shell.
+ 
+* pwd<br>	
+  Path of the working directory (pwd) command displays where we are. 
+  It displays the absolue address from the / folder.
+* cd<br>
+  cd command when used alone, takes the user from the current folder to the users home folder.
+* mkdir project3<br>
+* cd project3<br>
+* mkdir website1 website2 scripts<br>
+  mkdir command creates directories passed as parameter
+* touch scripts/installer.sh<br>
+  Touch command can create an empty file in the desired directory.
+* echo "echo This is an installer script" > scripts/installer.sh<br>
+  echo command writes the message inside the installer.sh (script file).
+* echo "top" >> scripts/installer.sh<br>
+  The above echo command with >> operator appends new lines of text to the existing text.
+* cat scripts/installer.sh -al<br>
+  cat command displays the content of the file
+* ./scripts/installer.sh<br>
+  Try to run the script and see the error (permission denied)
+* ls scripts/installer.sh -l <br>
+  Display the installer.sh with the details.<br>
+  User-Group-Everyone is the sequence of attributes for the displayed information of our script.<br>
+  Read-Write-Execute is the sequence of the file attributes for the information of our script. 
+* chmod 777 scripts/installer.sh<br>
+  chmod command changes the attributes of the file as desired.
+* chmod u=rw,og=r scripts/installer.sh
+  Updates the user/group/everyone as such.
+* chmod uga=rwx installer.sh  
+  Updates the permission for user/group/everyone rwx.
+* chmod uga=rw installer.sh  
+  Updates the permission for user/group/everyone rw.
+* chmod -R ugo=rw *.sh
+  Updates the read-write permissions for user/group/everyone
+* chmod 664 *.sh
+  Updates all the files with sh extension as 664.
+* mv installer.sh .installer.sh
+  mv command can be used to create hidden file/folder
+* mv .installer.sh installer.sh 
+  mv command can be used to set visible for hidden file/folder.
+END OF PROJECT3
+
+--- 
+
+##### <span style="color:red">33. project4 implementation</span>
+
+    Info : The purpose of this project is to provide an introduction to bash shell scripts. Step by step perform the operations in linux bash shell.
+ 
+* pwd<br>	
+  Path of the working directory (pwd) command displays where we are. 
+  It displays the absolue address from the / folder.
+* cd<br>
+  cd command when used alone, takes the user from the current folder to the users home folder.
+* mkdir project4<br>
+* cd project4<br>
+* echo '#!/bin/bash' > script1.sh
+* echo 'echo THIS IS SCRIPT 1' >> script1.sh<br>
+* echo 'echo Starting the execution of the script ...' >> script1.sh<br>
+* echo "#Using comments in scripts" >> script1.sh<br>
+* echo "printf "%d mul %f = %f\n" 6 6.0 36.0" >> script1.sh<br>
+* echo "gnome-terminal"<br>
+  It's possible to run a command in a terminal as well.
+
+* echo '#!/bin/bash' > script2.sh
+* echo 'echo THIS IS SCRIPT 2' >> script2.sh<br>
+* echo 'book="Linux Shell Scripting"' >> script2.sh<br>
+* echo 'total_chapters=8' >> script2.sh<br>
+* echo 'number_of_pages=210' >> script2.sh<br>
+* echo 'average_pages_per_chapter=26,25' >> script2.sh<br>
+* echo 'echo "Book name - $book"' >> script2.sh<br>
+* echo 'echo "Number of Chapters - $total_chapters"' >> script2.sh<br>
+* echo 'printf "Total number of pages in book - $number_of_pages\n"' >> script2.sh<br>
+* echo 'printf "Average pages in each chapter - %-.2f\n" $average_pages_per_chapter' >> script2.sh
+* chmod u=x script2.sh 
+END OF PROJECT4
+
+--- 
+
+
+##### <span style="color:red">34. project5 implementation</span>
+
+    Info : The purpose of this project is to read some details from a shell script. Step by step perform the operations in linux bash shell.
+ 
+* pwd<br>	
+  Path of the working directory (pwd) command displays where we are. 
+  It displays the absolue address from the / folder.
+* cd<br>
+  cd command when used alone, takes the user from the current folder to the users home folder.
+* mkdir project5<br>
+* cd project5<br>
+* nano script.sh
+  open up nano editor or any other editor that you prefer to fill these lines below. 
+
+#Reading variables from user input and using them
+#!/bin/bash
+#Filename: inputs.sh
+#Description: Reading the user input
+
+read -p "What is your name? "    # -p allows to prompt user a message
+echo Hello $REPLY, please follow the instructions below;
+
+read -s -p "Enter your secret key:" key # -s doesn't echo input in console
+echo $key
+
+read -p "Enter filename to be searched:"
+filename=$REPLY
+read -p "Enter path for search:" path
+echo "File $filename search matches to"
+find $path -name $filename
+
+END OF PROJECT5
+
+--- 
+
