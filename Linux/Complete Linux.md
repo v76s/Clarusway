@@ -745,8 +745,7 @@ Usage:<br>
         total_chapters=8 # Stores integer value
         number_of_pages=210 # Stores integer value
         average_pages_per_chapter=26,25 # Stores float value
-        printf 'Number of pages: %-7.2f\n'
-        $average_pages_per_chapter
+        printf 'Number of pages: %-7.2f\n' $average_pages_per_chapter
 
 - chmod +x script3.sh
 - ./script3.sh (Run the script)
@@ -796,7 +795,7 @@ Script6:<br>
         read -p 'Enter Name, Surname, Password : ' name loginname password
         echo $name $loginname $password
 
-        read -p -s 'Enter password hidden: ' password
+        read -p 'Enter password hidden: ' -s password
         echo $password
 
 - chmod +x script6.sh
