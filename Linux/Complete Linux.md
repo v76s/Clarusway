@@ -883,7 +883,7 @@ Script11:<br>
 - Write the content to file: script11.sh:<br>
   
         #!/bin/bash
-        Daytime=$(date + "%a")
+        Daytime=$(date)
         echo "Opening hours for $Daytime ..."
         case "$Daytime" in
             Mon)
