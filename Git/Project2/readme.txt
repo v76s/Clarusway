@@ -46,7 +46,13 @@ The purpose of this workout is to understand the details of staging area and com
 17 ] <h1>This is index3.html in third commit.</h1>
     Write the above line in index3.html
 
-18 ] git status 
+18 ] git add .
+    Add the current file with git add . or git add index3.html
+
+19 ] git commit -m "index3.html committed"
+    Create the third commit with the message above
+
+18 ] git status, git log
     Do you see all the commits that we have made till now? There should be no more changes displayed. 
 
 19 ] <h2>This is index1.html in fourth commit.</h2>
@@ -59,7 +65,7 @@ The purpose of this workout is to understand the details of staging area and com
     Do the commit with the explanation.
 
 22 ] Add these line in all the files, index1.html, index2.html, index3.html
-    <h1>This is the fifth commit.</h1>
+    <h3>This is the fifth commit.</h3>
 
 23 ] git status
     See that now we have 3 files modified, they are all waiting to be added to the staging area.
@@ -70,18 +76,26 @@ The purpose of this workout is to understand the details of staging area and com
 25 ] git commit -m "This is the fifth commit that contains 3 file updates."
 
 26 ] git log --oneline --graph --all
-     See all the commits
+     See all the commits, it will crash, we can fix it by:
+     git config --global core.pager cat
 
 27 ] git checkout [HASHCODE] # (IMPORTANT : Select the first commit to go to)
      Entering 2 bytes of the hash code will be enough. Observe the file changes.
 
 28 ] git log --oneline --graph --all
      How many commits do you see?
+
+29 ] git checkout master
+     Get back to the latest head pointer
  
 29 ] Add these line in all the files, index1.html, index2.html, index3.html
-    <h1>This is the sixth commit.</h1>
+    <h4>This is the sixth commit.</h4>
 
-30 ] Create a file called main.js, write "This is a js file for the 6th commit" inside of it. 
+30 ] Create a file called main.js, write 
+	function message() {
+    			console.log('This is a js file for the 6th commit');
+	}
+	inside of it. 
 
 31 ] git status
      Do you see all the files and the main.js inside the changeset?
@@ -92,11 +106,18 @@ The purpose of this workout is to understand the details of staging area and com
 33 ] Later remove main.js from the staging area, we may be unsure about the changes, we will add it in the 7th commit. 
      git reset HEAD -- main.js   or maybe unstage all changes by using;
      git reset HEAD -- .
+     git restore --staged main.js
      Observe by git status
 
-34 ] Create another folders in Project2 called "media" and "css"
+34 ] Create other folders in Project2 called "media" and "css"
      Inside media and css create files such as "sample.mp4" and "sample.css"
      Add "This is for the 6th commit" inside these files.
+
+     css: .h1{
+                 background-color: dodgerblue;
+             }
+             /* This is the sixth commit */
+
 
 35 ] git add .
      Add all the modifications back to the staging area and do the commit. 
