@@ -52,64 +52,64 @@ The purpose of this workout is to understand the details of staging area and com
 19 ] git commit -m "index3.html committed"
     Create the third commit with the message above
 
-18 ] git status, git log
+20 ] git status, git log
     Do you see all the commits that we have made till now? There should be no more changes displayed. 
 
-19 ] <h2>This is index1.html in fourth commit.</h2>
+21 ] <h2>This is index1.html in fourth commit.</h2>
     Add the above line in index1.html, it will be a record that will exist in the 4th commit.
 
-20 ] git add .
+22 ] git add .
     Add the current file with git add . or git add index1.html
 
-21 ] git commit -m "This is the fourth commit that contains changes in index1.html only"
+23 ] git commit -m "This is the fourth commit that contains changes in index1.html only"
     Do the commit with the explanation.
 
-22 ] Add these line in all the files, index1.html, index2.html, index3.html
+24 ] Add these line in all the files, index1.html, index2.html, index3.html
     <h3>This is the fifth commit.</h3>
 
-23 ] git status
+25 ] git status
     See that now we have 3 files modified, they are all waiting to be added to the staging area.
 
-24 ] git add .
+26 ] git add .
     Add all 3 files to the indexing/staging area.
 
-25 ] git commit -m "This is the fifth commit that contains 3 file updates."
+27 ] git commit -m "This is the fifth commit that contains 3 file updates."
 
-26 ] git log --oneline --graph --all
+28 ] git log --oneline --graph --all
      See all the commits, it will crash, we can fix it by:
      git config --global core.pager cat
 
-27 ] git checkout [HASHCODE] # (IMPORTANT : Select the first commit to go to)
+29 ] git checkout [HASHCODE] # (IMPORTANT : Select the first commit to go to)
      Entering 2 bytes of the hash code will be enough. Observe the file changes.
 
-28 ] git log --oneline --graph --all
+30 ] git log --oneline --graph --all
      How many commits do you see?
 
-29 ] git checkout master
+31 ] git checkout master
      Get back to the latest head pointer
  
-29 ] Add these line in all the files, index1.html, index2.html, index3.html
+32 ] Add these line in all the files, index1.html, index2.html, index3.html
     <h4>This is the sixth commit.</h4>
 
-30 ] Create a file called main.js, write 
+33 ] Create a file called main.js, write 
 	function message() {
     			console.log('This is a js file for the 6th commit');
 	}
 	inside of it. 
 
-31 ] git status
+34 ] git status
      Do you see all the files and the main.js inside the changeset?
 
-32 ] git add .
+35 ] git add .
      Add all the files/changes in the staging area.
 
-33 ] Later remove main.js from the staging area, we may be unsure about the changes, we will add it in the 7th commit. 
+36 ] Later remove main.js from the staging area, we may be unsure about the changes, we will add it in the 7th commit. 
      git reset HEAD -- main.js   or maybe unstage all changes by using;
      git reset HEAD -- .
      git restore --staged main.js
      Observe by git status
 
-34 ] Create other folders in Project2 called "media" and "css"
+37 ] Create other folders in Project2 called "media" and "css"
      Inside media and css create files such as "sample.mp4" and "sample.css"
      Add "This is for the 6th commit" inside these files.
 
@@ -119,37 +119,37 @@ The purpose of this workout is to understand the details of staging area and com
              /* This is the sixth commit */
 
 
-35 ] git add .
+38 ] git add .
      Add all the modifications back to the staging area and do the commit. 
 
-36 ] git commit -m "This is for the 6th commit"
+39 ] git commit -m "This is for the 6th commit"
      Add all the changes of files and folders to the 6th commit
 
-37 ] git checkout [HASHCODE] # (IMPORTANT : Select the first commit to go to)
+40 ] git checkout [HASHCODE] # (IMPORTANT : Select the first commit to go to)
      Do you see the files and folders from the 6th commit?
 
-38 ] git checkout master
+41 ] git checkout master
      Go to the latest commit back again.
 
-39 ] go to your Github account and create a new repository called Project2
+42 ] go to your Github account and create a new repository called Project2
 
-40 ] git remote add origin "" (link of your repository)
+43 ] git remote add origin "" (link of your repository)
     
-41 ] git remote -v
+44 ] git remote -v
      git remote show
      git remote remove origin (if needed)
      Display pull/push endpoints.
    
-42 ] git push -f -u origin master
+45 ] git push -f -u origin master
      git push --set-upstream origin master
    
-43 ] git log --graph --oneline --all
+46 ] git log --graph --oneline --all
      Display a list of the repository history. 
     
-44 ] git status -s -b -v  short branch verbose
+47 ] git status -s -b -v  short branch verbose
      git status -s -b -v --show-stash
    
-45 ] Summary:
+48 ] Summary:
     Created a repository called Project2.
     Created 6 commits.
     Introduced remote repository to git.
