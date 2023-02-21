@@ -153,5 +153,5 @@ Create a PAT for access.
     Created a repository called Project2.
     Created 6 commits.
     Introduced remote repository to git.
-    Pushed our first code to Github.
+    Pushed our code to Github.
 

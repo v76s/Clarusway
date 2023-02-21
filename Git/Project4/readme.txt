@@ -80,30 +80,42 @@ The purpose of this workout is to understand the details of conflicts.
 29 ] git merge feature1
      Invite the updates to master branch
 
-30 ] go to your Github account and create a new repository called Project4
+30 ] git branch feature2
+     Create another branch.
 
-31 ] git remote add origin "" (link of your repository)
+31 ] modify index1.html in master and feature2 branches on the same line and commit.
+
+32 ] go to master branch.
+     git checkout master.
+
+33 ] git merge feature2
+
+34 ] Resolve the conflicts.
+
+35 ] go to your Github account and create a new repository called Project4
+
+36 ] git remote add origin "" (link of your repository)
     
-32 ] git remote -v
+37 ] git remote -v
      git remote show
      git remote remove origin (if needed)
      Display pull/push endpoints.
    
-33 ] git push -f -u origin master
+38 ] git push -f -u origin master
      git push --set-upstream origin master
    
-34 ] git log --graph --oneline --all
+39 ] git log --graph --oneline --all
      Display a list of the repository history. 
     
-35 ] git status -s -b -v  short branch verbose
+40 ] git status -s -b -v  short branch verbose
      git status -s -b -v --show-stash
 
-36 ] Create several feature/bugfix commits and push them to the repositories,
+41 ] Create several feature/bugfix commits and push them to the repositories,
      push different repositories. git push origin feature1, git push origin master.
    
-37 ] Summary:
-    Created a repository called Project3.
-    Created 6 commits.
+42 ] Summary:
+    Created a repository called Project4.
+    Created commits, branches, resolved conflicts.
     Introduced remote repository to git.
-    Pushed our first code to Github.
+    Pushed our code to Github.
 
