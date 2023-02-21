@@ -1,5 +1,5 @@
 The purpose of this workout is to understand the details of staging area and commits
-
+Create a PAT for access.
 1 ] cd Repositories
     Open a terminal and go to the folder that contains your repositories, called "Repositories"
 
