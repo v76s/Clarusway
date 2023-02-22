@@ -60,7 +60,10 @@ The purpose of this workout is to understand the details of branching.
 20 ] <h1>This is feature3.html in feature3 branch</h1>
     Write the above line in feature3.html
 
-21 ] git commit -m "feature3.html committed in feature3 branch"
+21 ] git add .
+     Stage the file in feature3 branch.
+
+22 ] git commit -m "feature3.html committed in feature3 branch"
     Create the commit with the message above
 
 22 ] git checkout master
@@ -82,27 +85,77 @@ The purpose of this workout is to understand the details of branching.
 28 ] git merge feature3
      Invite the updates to master branch
 
-29 ] go to your Github account and create a new repository called Project3
+29 ] git branch --delete feature3
+     Delete the merged branch, we don't need it anymore. 
 
-30 ] git remote add origin "" (link of your repository)
+30 ] git switch bugfix1  (OR) git checkout bugfix1
+     Switch to the bugfix1 branch.
+
+31 ] Create bugfix1.js and save the contents below in it;
+
+function bugfix1() {
+    console.log('This is the bugfix');
+}
+
+32 ] git add .
+     Stage the bugfix1.js and stage the file.
+
+33 ] git commit -m "This is the bugfix1.js in bugfix1 branch" 
     
-31 ] git remote -v
+34 ] Till now there is no problem with the Bugfix1 branch.
+     But we will also do some modifications on the common
+     files that will end up with a conflict, let's do it.
+    
+35 ] git checkout master.
+     Switch back to master branch.
+
+36 ] Replace the index1.html content with the line below;
+     <h1>Updated index1.html</h1>
+     git add .   git commit -m "index1.html updated"
+
+37 ] As you remember we have index1.html existing also 
+    in Bugfix1 branch, lets switch to that branch and 
+    modify the contents in a different way.
+    git checkout bugfix1
+
+38 ] Modify the index1.html content with the lines below;
+<h1>Here bugfix1 makes the updates.</h1>
+<h1>Here bugfix1 makes the updates.</h1>
+    git add . 
+    git commit -m "Bugfix1 branch updates"
+
+39 ] Now let's try to merge them;
+   git checkout master
+   git merge bugfix1
+   What do you see? There will be a conflict; Fix it as follows;
+<h1>This is index1.html in first commit.</h1>
+<h1>Here bugfix1 makes the updates.</h1>
+<h1>Updated index1.html</h1>
+<h4>This is the latest decision made for the master branch, merged with bugfix1 branch.</h4>
+  git add . 
+  git commit -m "Conflict resolved, committed"
+
+40 ] go to your Github account and create a new repository called Project3
+
+41 ] git remote add origin "" (link of your repository)
+    
+42 ] git remote -v
      git remote show
      git remote remove origin (if needed)
      Display pull/push endpoints.
    
-32 ] git push -f -u origin master
+43 ] git push -f -u origin master
      git push --set-upstream origin master
    
-33 ] git log --graph --oneline --all
+44 ] git log --graph --oneline --all
      Display a list of the repository history. 
     
-34 ] git status -s -b -v  short branch verbose
+45 ] git status -s -b -v  short branch verbose
      git status -s -b -v --show-stash
    
-35 ] Summary:
+46 ] Summary:
     Created a repository called Project3.
-    Created 6 commits.
+    Created commits.
     Introduced remote repository to git.
     Pushed our code to Github.
 
