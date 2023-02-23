@@ -8,6 +8,14 @@ Change the security properties of the app_data folder to allow modify access to 
 Check anonymous authentication is enabled
 Visit Http://localhost/bonobo.git.server
 Create a user
+
+Do the configuration for IIS Server in OS:
+Turn Windows Features on off
+Internet Information Services
+World Wide Web Services
+Application Development Features
+Check (enable) the features, all but not CGI.
+
 Amend settings to “allow user repository creation” and “allow push to create repositories”
 Create a repo
 Push repo to your server
