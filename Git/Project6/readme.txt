@@ -1,5 +1,7 @@
-Optional Bonobo git server installation workout.
+Alternatives to Git Servers:
+https://www.cyberciti.biz/open-source/github-alternatives-open-source-seflt-hosted/
 
+Optional Bonobo git server installation workout.
 https://bonobogitserver.com/resources/releases/6_5_0.zip
 Download the zip file
 Unarchive the zip file
