@@ -76,3 +76,5 @@ The purpose of this workout is to understand the details of using cherry-pick.
     Introduced remote repository to git.
     Pushed our code to Github.
 
+// Comments here ..
+
