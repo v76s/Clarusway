@@ -95,8 +95,8 @@ The purpose of this workout is to understand the details of using stashes.
      git pull.
    
 32 ] Summary:
-    Created a repository called Project3.
-    Created 6 commits.
+    Created a repository called Project5.
+    Created commits.
     Introduced remote repository to git.
     Pushed our code to Github.
 
