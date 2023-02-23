@@ -11,6 +11,8 @@ Check anonymous authentication is enabled
 Visit Http://localhost/bonobo.git.server
 Create a user
 
+Default user pass : admin admin
+
 Do the configuration for IIS Server in OS:
 Turn Windows Features on off
 Internet Information Services
