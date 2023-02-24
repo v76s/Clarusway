@@ -109,6 +109,10 @@ Display features of Credential Manager in Windows.
      git reset HEAD -- .
      git restore --staged main.js
      Observe by git status
+      
+     // Reminder: git restore --staged index.html
+     // Reminder: git reset --hard (does the same thing but forcefully)
+     // Reminder: git rm –cached index.html (Removes the tracking of from git for this file. )
 
 37 ] Create other folders in Project2 called "media" and "css"
      Inside media and css create files such as "sample.mp4" and "sample.css"
