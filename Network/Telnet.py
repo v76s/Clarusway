@@ -2,8 +2,8 @@ import getpass
 import telnetlib
 
 # https://www.tutorialspoint.com/python_network_programming/python_telnet.htm
-# Putty connection.
-# 
+# Putty connection on AWS.
+# https://github.com/v76s/Clarusway/tree/master/Network
 
 HOST = "http://54.87.158.38/"
 user = input("Enter your remote account: ")
