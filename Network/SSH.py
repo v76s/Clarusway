@@ -1,0 +1,1 @@
+ssh -i "Ubuntu_KeyPair.pem" ubuntu@ec2-34-203-29-27.compute-1.amazonaws.com
