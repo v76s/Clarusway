@@ -1,0 +1,28 @@
+.bg-main{
+  background-color: #EA3D62;
+}
+
+.text-main{
+  color: #EA3D62;
+}
+
+/* The ::before selector inserts something before the content of each selected element(s). */
+body::before{
+  content: '';
+  height: 75px;
+  width: 100%;
+  display: block;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media (min-width:768px) {
+  .news-input{
+    width:50%;
+  }
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
